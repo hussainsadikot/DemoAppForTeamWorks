@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_for_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_phone_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Phone Number :"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="false"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_phone_number_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/tv_phone_number_view"
+            android:layout_centerHorizontal="false"
+            android:text=" +91976543210"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_email_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:layout_below="@id/tv_phone_number_view"
+            android:visibility="visible"
+
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_email_view_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone_number_view"
+
+            android:text="abc@xyz.com"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:layout_toRightOf="@id/tv_email_view"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
